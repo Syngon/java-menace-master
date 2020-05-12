@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="java_menace.CharSelection"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:java_menace"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1200" Height="768" UseLayoutRounding="False">
+
+    <Grid>
+        <Grid Name="Tela04">
+            <Image HorizontalAlignment="Left" Height="768" VerticalAlignment="Top" Width="1200" Source="/Assets/Menu/Telas/4_tela.png" />
+            <Image Margin="0,10,1050,0" VerticalAlignment="Top" Height="107" Width="150" Tapped="Back" Source="/Assets/Menu/Telas/btn_back.png"></Image>
+            <Image Margin="930,431,152,0" VerticalAlignment="Top" Height="112" Width="118" Tapped="Play" Source="/Assets/Menu/Telas/btn_play.png"></Image>
+            <Image Margin="120,616,998,0" VerticalAlignment="Top" Height="64" Width="82" Tapped="Prev" Source="/Assets/Menu/Telas/seta_voltar.png" ></Image>
+            <Image Margin="254,616,864,0" VerticalAlignment="Top" Height="64" Width="82" Tapped="Next" Source="/Assets/Menu/Telas/seta_ir.png"></Image>
+            <TextBox x:Name="tb_name" HorizontalAlignment="Left" Margin="129,363,0,0" Text="" VerticalAlignment="Top" Height="38" Width="200" FocusVisualSecondaryBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" Visibility="Visible" RequestedTheme="Dark" FontSize="20" FontFamily="Consolas" Foreground="Black" />
+            <Image x:Name="img_face" HorizontalAlignment="Left" Height="146" Margin="136,444,0,0" VerticalAlignment="Top" Width="186"/>
+            <Image x:Name="img_char" HorizontalAlignment="Left" Height="139" Margin="620,444,0,0" VerticalAlignment="Top" Width="162"/>
+            <Image x:Name="img_char_name" HorizontalAlignment="Left" Height="42" Margin="528,0,0,0" VerticalAlignment="Center" Width="317"/>
+        </Grid>
+    </Grid>
+</Page>

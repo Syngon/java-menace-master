@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6A7BC1C6-B3E7-45FA-888D-54A24B385433}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>java_menace</RootNamespace>
+    <AssemblyName>java-menace</AssemblyName>
+    <DefaultLanguage>pt-BR</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateKeyFile>java-menace_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Characters\Character.cs" />
+    <Compile Include="Characters\Mobs\TruffleMan.cs" />
+    <Compile Include="Characters\Mobs\ZombieFreshman.cs" />
+    <Compile Include="Characters\NPC.cs" />
+    <Compile Include="Characters\Playable\Linus.cs" />
+    <Compile Include="Characters\Mob.cs" />
+    <Compile Include="Characters\PlayableCharacter.cs" />
+    <Compile Include="Characters\Playable\Steve.cs" />
+    <Compile Include="Characters\Mobs\Veteran.cs" />
+    <Compile Include="CharSelection.xaml.cs">
+      <DependentUpon>CharSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.xaml.cs">
+      <DependentUpon>Credits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Economy\Money\Bitcoin.cs" />
+    <Compile Include="Economy\Money\Jolicoin.cs" />
+    <Compile Include="Economy\Shop\CoffeMachine.cs" />
+    <Compile Include="Economy\Shop\JoliFox.cs" />
+    <Compile Include="Economy\Shop\Jolishop.cs" />
+    <Compile Include="Economy\Yemoja.cs" />
+    <Compile Include="Extras\Music.cs" />
+    <Compile Include="Itens\Hardwares\Hardware.cs" />
+    <Compile Include="Itens\Hardwares\Notebook.cs" />
+    <Compile Include="Itens\Inventory.cs" />
+    <Compile Include="Itens\Item.cs" />
+    <Compile Include="Itens\Potions\LifePotion.cs" />
+    <Compile Include="Itens\Potions\ManaPotion.cs" />
+    <Compile Include="Itens\Potions\Potion.cs" />
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Movement\Collider.cs" />
+    <Compile Include="Movement\CollisionManager.cs" />
+    <Compile Include="Movement\Legs.cs" />
+    <Compile Include="Characters\Playable\MrRobot.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Physical Objects\Chest.cs" />
+    <Compile Include="Physical Objects\PhysicalObject.cs" />
+    <Compile Include="Physical Objects\StageManager.cs" />
+    <Compile Include="Physical Objects\World.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quest\QuestBase.cs" />
+    <Compile Include="Quest\QuestList.cs" />
+    <Compile Include="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Terminal\Bash.cs" />
+    <Compile Include="Terminal\Command.cs" />
+    <Compile Include="Terminal\Interpreter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Chest\chest.png" />
+    <Content Include="Assets\CoffeeMachine\vending_machine1.png" />
+    <Content Include="Assets\CoffeeMachine\vending_machine2.png" />
+    <Content Include="Assets\JoliRaposa\char_bottom_fox.png" />
+    <Content Include="Assets\JoliRaposa\char_left_fox.png" />
+    <Content Include="Assets\JoliRaposa\char_right_fox.png" />
+    <Content Include="Assets\JoliRaposa\char_top_fox.png" />
+    <Content Include="Assets\Lapa\lapa costa.png" />
+    <Content Include="Assets\Lapa\lapa frente.png" />
+    <Content Include="Assets\Lapa\lapa lado 1.png" />
+    <Content Include="Assets\Lapa\lapa lado 2.png" />
+    <Content Include="Assets\Linus\char_bottom_linux.png" />
+    <Content Include="Assets\Linus\char_left_linux.png" />
+    <Content Include="Assets\Linus\char_right_linux.png" />
+    <Content Include="Assets\Linus\char_top_linux.png" />
+    <Content Include="Assets\Menu\NomePersonagens\Linus.png" />
+    <Content Include="Assets\Menu\NomePersonagens\MrRobot.png" />
+    <Content Include="Assets\Menu\NomePersonagens\SteveJobs.png" />
+    <Content Include="Assets\Menu\Personagens\Linus.png" />
+    <Content Include="Assets\Menu\Personagens\MrRobot.png" />
+    <Content Include="Assets\Menu\Personagens\SteveJobs.png" />
+    <Content Include="Assets\Menu\Telas\1_tela.png" />
+    <Content Include="Assets\Menu\Telas\2_tela.png" />
+    <Content Include="Assets\Menu\Telas\3_tela.png" />
+    <Content Include="Assets\Menu\Telas\4_tela.png" />
+    <Content Include="Assets\Menu\Telas\btn_back.png" />
+    <Content Include="Assets\Menu\Telas\btn_credits.png" />
+    <Content Include="Assets\Menu\Telas\btn_play.png" />
+    <Content Include="Assets\Menu\Telas\btn_play_menuini.png" />
+    <Content Include="Assets\Menu\Telas\btn_settings.png" />
+    <Content Include="Assets\Menu\Telas\seta_ir.png" />
+    <Content Include="Assets\Menu\Telas\seta_voltar.png" />
+    <Content Include="Assets\MrRobot\char_bottom_robot.png" />
+    <Content Include="Assets\MrRobot\char_left_robot.png" />
+    <Content Include="Assets\MrRobot\char_right_robot.png" />
+    <Content Include="Assets\MrRobot\char_top_robot.png" />
+    <Content Include="Assets\Music\swordartmusic.wav" />
+    <Content Include="Assets\NPC\araguinho.png" />
+    <Content Include="Assets\NPC\bacon.png" />
+    <Content Include="Assets\NPC\ederum.png" />
+    <Content Include="Assets\NPC\jolinho.png" />
+    <Content Include="Assets\NPC\pede.png" />
+    <Content Include="Assets\NPC\pike.png" />
+    <Content Include="Assets\Worlds\Cimatec0.png" />
+    <Content Include="Assets\Steve\char_bottom_jobs.png" />
+    <Content Include="Assets\Steve\char_left_jobs.png" />
+    <Content Include="Assets\Steve\char_right_jobs.png" />
+    <Content Include="Assets\Steve\char_top_jobs.png" />
+    <Content Include="Assets\Zombie\zombie 3.png" />
+    <Content Include="Assets\Zombie\zombie.png" />
+    <Content Include="Assets\Zombie\zombie2.png" />
+    <Content Include="Assets\Zombie\zombie4.png" />
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="CharSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Credits.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Settings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.8</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Fonts\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

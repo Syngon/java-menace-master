@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="java_menace.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:java_menace"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 
+    RequestedTheme="Dark" 
+    Width="1200"
+    Height="768"
+    UseLayoutRounding="False" 
+    Loaded="Page_Loaded">
+
+    <Grid Name="Stage">
+        <Grid.Resources>
+            <SolidColorBrush x:Key="TextControlBackgroundPointerOver" Color="{ThemeResource SystemChromeBlackLowColor}"/>
+            <SolidColorBrush x:Key="TextControlBackgroundFocused" Color="{ThemeResource SystemChromeBlackLowColor}" />
+        </Grid.Resources>
+    </Grid>
+</Page>

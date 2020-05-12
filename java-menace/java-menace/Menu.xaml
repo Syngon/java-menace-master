@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="java_menace.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:java_menace"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1200" Height="768" UseLayoutRounding="False">
+
+    <Grid>
+        <Grid Name="Tela01">
+            <Image HorizontalAlignment="Left" Height="768" VerticalAlignment="Center" Width="1200" Source="/Assets/Menu/Telas/1_tela.png"/>
+        </Grid>
+        <Image Margin="452,339,439,0" VerticalAlignment="Top" Height="71" Tapped="Play" Source="/Assets/Menu/Telas/btn_play_menuini.png"></Image>
+        <Image Margin="454,481,437,0" VerticalAlignment="Top" Height="75" Tapped="MoveToSettings" Source="/Assets/Menu/Telas/btn_settings.png"></Image>
+        <Image Margin="452,624,439,0" VerticalAlignment="Top" Height="73" Tapped="MoveToCredits" Source="/Assets/Menu/Telas/btn_credits.png"/>
+
+    </Grid>
+</Page>
